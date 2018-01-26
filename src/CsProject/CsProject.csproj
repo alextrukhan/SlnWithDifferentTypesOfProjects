@@ -2,6 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net47</TargetFramework>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_NotNetStandard|AnyCPU'" />
   <ItemGroup>
     <ProjectReference Include="..\NetStandardProject\NetStandardProject.csproj" />
   </ItemGroup>

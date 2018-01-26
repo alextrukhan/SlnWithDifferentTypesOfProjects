@@ -1,14 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\$(Configuration)\netstandard2.0\Aristocrat.CDS.Common.API</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\$(Configuration)\netstandard2.0\Aristocrat.CDS.Common.API</DocumentationFile>
   </PropertyGroup>
-  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_NotNetStandard|AnyCPU'">
+    <DocumentationFile>bin\$(Configuration)\netstandard2.0\Aristocrat.CDS.Common.API</DocumentationFile>
+  </PropertyGroup>
 </Project>
